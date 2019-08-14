@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtPorcent"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="26dp"
+        android:text="Porcentaje"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="63"
+        tools:layout_conversion_wrapWidth="297" />
+
+    <EditText
+        android:id="@+id/txtPorTeorico"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="92"
+        tools:layout_conversion_wrapWidth="226" />
+
+    <TextView
+        android:id="@+id/lblPorPractico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="Práctico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="140" />
+
+    <TextView
+        android:id="@+id/lblPorPract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:text="Teórico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="128" />
+
+    <TextView
+        android:id="@+id/lbl1P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginBottom="27dp"
+        android:text="Nota 1° Parcial /100"
+        app:layout_constraintBottom_toTopOf="@+id/lbl2P"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="334" />
+
+    <EditText
+        android:id="@+id/txt1P"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="118"
+        tools:layout_conversion_wrapWidth="394" />
+
+    <TextView
+        android:id="@+id/lbl2P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:text="Nota 2° Parcial /100"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt2P"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="334" />
+
+    <TextView
+        android:id="@+id/lblMejor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="30dp"
+        android:text="Nota Mejoramiento /100"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtMejor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl2P"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="411" />
+
+    <EditText
+        android:id="@+id/txtMejor"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="118"
+        tools:layout_conversion_wrapWidth="394" />
+
+    <TextView
+        android:id="@+id/lblPract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="35dp"
+        android:text="Nota Práctico /100"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPract"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMejor"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="317" />
+
+    <EditText
+        android:id="@+id/txtPract"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="231dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="118"
+        tools:layout_conversion_wrapWidth="394" />
+
+    <EditText
+        android:id="@+id/txt2P"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="118"
+        tools:layout_conversion_wrapWidth="394" />
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="139dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="286dp"
+        android:background="#A8F7D6"
+        android:text="Resultado"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="158"
+        tools:layout_conversion_wrapWidth="365" />
+
+    <TextView
+        android:id="@+id/lblPromFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="378dp"
+        android:text="Prom Final"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="68"
+        tools:layout_conversion_wrapWidth="223" />
+
+    <TextView
+        android:id="@+id/lblNotaMin"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="Nota Minima para Pasar"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/lblEstado"
+        app:layout_constraintLeft_toRightOf="@+id/lblPromFinal"
+        app:layout_constraintRight_toLeftOf="@+id/lblEstado"
+        app:layout_constraintStart_toEndOf="@+id/lblPromFinal"
+        app:layout_constraintTop_toBottomOf="@+id/btnResult"
+        tools:layout_conversion_wrapHeight="119"
+        tools:layout_conversion_wrapWidth="496" />
+
+    <TextView
+        android:id="@+id/lblEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Estado"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="63"
+        tools:layout_conversion_wrapWidth="144" />
+
+    <TextView
+        android:id="@+id/txtPromFinal"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="22dp"
+        android:text="      -"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPromFinal"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="121" />
+
+    <TextView
+        android:id="@+id/txtNotaMin"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="11dp"
+        android:text="    -"
+        app:layout_constraintLeft_toRightOf="@+id/txtPromFinal"
+        app:layout_constraintStart_toEndOf="@+id/txtPromFinal"
+        app:layout_constraintTop_toBottomOf="@+id/lblNotaMin"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="121" />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="      -"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEstado"
+        tools:layout_conversion_wrapHeight="50"
+        tools:layout_conversion_wrapWidth="123" />
+
+    <Button
+        android:id="@+id/btnEst"
+        style="@android:style/Widget.Button"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="#A8F7D6"
+        android:text="Estudiantes Destacados FIEC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="158"
+        tools:layout_conversion_wrapWidth="389" />
+
+    <TextView
+        android:id="@+id/txtPorPractico"
+        android:layout_width="68dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="      -----"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="89"
+        tools:layout_conversion_wrapWidth="179" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
