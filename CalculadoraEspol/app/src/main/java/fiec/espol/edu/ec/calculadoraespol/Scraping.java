@@ -1,6 +1,7 @@
 package fiec.espol.edu.ec.calculadoraespol;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ public class Scraping extends AppCompatActivity implements InterfaceParsing {
 
         headlineTextView = findViewById(R.id.txtTitulo);
         articleTextView = findViewById(R.id.txtDatos);
+        articleTextView.setMovementMethod(new ScrollingMovementMethod());
 
         //Execute AsyncTask for Parsing HTML
         new Parsing(this).execute("https://www.fiec.espol.edu.ec/es/lista-excelencia");

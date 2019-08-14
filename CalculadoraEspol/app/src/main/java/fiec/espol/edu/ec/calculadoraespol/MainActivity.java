@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText etPorTeorico;
@@ -48,22 +50,21 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                int porTeorico=Integer.parseInt(etPorTeorico.getText().toString())/100;
+                int porTeorico=Integer.parseInt(etPorTeorico.getText().toString());
+
                 double nota1P=Double.parseDouble(etNota1P.getText().toString());
                 double nota2P=Double.parseDouble(etNota2P.getText().toString());
                 double notaMej=Double.parseDouble(etNotaMej.getText().toString());
                 double pract=Double.parseDouble(etPractico.getText().toString());
 
-                int porPractico=1-porTeorico;
+                double[] notas = {nota1P,nota2P, notaMej };
+                Arrays.sort(notas);
+                int porPractico=100-porTeorico;
 
-                double minimo=Math.min(nota1P,nota2P);
-                minimo=Math.min(minimo,notaMej);
+                double maximo=notas[2];
 
-                double maximo=Math.max(nota1P,nota2P);
-                maximo=Math.max(maximo,notaMej);
-
-                double promTeorico= (nota1P+nota2P+notaMej-minimo)/2;
-                double promFinal=promTeorico*(porTeorico)+pract*porPractico;
+                double promTeorico= (notas[1]+notas[2])/2;
+                double promFinal=(promTeorico*porTeorico/100)+(pract*porPractico/100);
 
                 double notaMin=(2*(60-pract*porPractico)/porTeorico)-maximo;
 
